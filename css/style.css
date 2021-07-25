@@ -1,0 +1,77 @@
+.header {
+    background-color: #F78501;
+}
+
+.kodluyoruzLogo {
+    background-color: white;
+    color: #F78501;
+}
+
+@media (max-width: 576px) {
+    .kodluyoruzTitle {
+        font-size: 30px;
+    }
+}
+
+.addButton {
+    background-color: #D9D9D9;
+    transition: .2s;
+}
+
+.addButton:hover {
+    background-color: #006BB7;
+    color: white;
+}
+
+#list li {
+    position: relative;
+    padding: 17px;
+    padding-left: 35px;
+}
+
+#list li:nth-child(even) {
+    background-color: #EEEEEE;
+}
+
+#list li:hover {
+    background-color: #DDDDDD;
+    cursor: pointer;
+}
+
+.list-group-item button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    border: none;
+    background-color: inherit;
+}
+
+.list-group-item button:hover {
+    background-color: #DC3545;
+    color: white;
+}
+
+#list li.checked {
+    background-color: #006BB7;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+#list li.checked button {
+    color: white;
+}
+
+#list li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 20px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}

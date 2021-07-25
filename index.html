@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yapılacaklar Listesi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/89efc309aa.js" crossorigin="anonymous"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+
+    <!-- toast işlemi gerçekleştiğinde aşağıdaki etiketin içerisinde gerçekleşecek -->
+    <div class="toast-notification">
+
+    </div>
+
+    <div class="container">
+
+        <!-- header-start -->
+        <div class="header py-4 text-center text-white">
+
+            <a href="https://www.kodluyoruz.org/" target="_blank">
+                <img class="kodluyoruzLogo" src="img/kodluyoruz.png" alt="Kodluyoruz">
+            </a>
+            <h1 class="kodluyoruzTitle my-3">Yapılacaklar Listesi</h1>
+
+            <form action="" id="addForm">
+                <div class="input-group px-4">
+
+                    <input id="formInput" class="py-4 border-0 w-75 form-control" type="text" placeholder="Bugün ne yapacaksın?">
+                    <div class="input-group-prepend w-25">
+                        <button type="submit" class="addButton border-0 w-100">Ekle</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- header-end -->
+
+        <!-- list-start -->
+        <ul id="list" class="list-group">
+
+            <li class="list-group-item">
+                3 Litre Su İç
+                <button type="button" onclick="removeElement(this)"><i class="fas fa-times"></i></button>
+            </li>
+            <li class="list-group-item">
+                Ödevleri Yap
+                <button type="button" onclick="removeElement(this)"><i class="fas fa-times"></i></button>
+            </li>
+            <li class="list-group-item">
+                En Az Üç Saat Kodlama Yap
+                <button type="button" onclick="removeElement(this)"><i class="fas fa-times"></i></button>
+            </li>
+            <li class="list-group-item">
+                Yemek Yap
+                <button type="button" onclick="removeElement(this)"><i class="fas fa-times"></i></button>
+            </li>
+            <li class="list-group-item">
+                50 Sayfa Kitap Oku
+                <button type="button" onclick="removeElement(this)"><i class="fas fa-times"></i></button>
+            </li>
+        </ul>
+        <!-- list-end -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
